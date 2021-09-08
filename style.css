@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header_logo{
+    display: flex;
+  
+}
+
+.container_header {
+    align-items: center;
+}
+
+
+.localisation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+}
