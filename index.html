@@ -15,58 +15,80 @@
 </head>
 
 <body>
-    <header class="header_logo">
-            <img class="" src="images/logo/ohmyfood@2x.svg" alt="logo" /> 
-    </header>
-
-    <div class="localisation">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Paris, Belleville</p>
+    <div class="container_header">
+        <img src="images/logo/ohmyfood.png" alt="logo">
     </div>
+
 
     <main class="container">
 
-        <div>
-
+        <div class="localisation">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="ville">Paris, Belleville</p>
         </div>
 
-        <h3>Reservez le menu qui vous convient</h3>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <div class="book">
+            <h2 class="titre_book">Reservez le menu qui vous convient</h2>
+            <p class="sous_titre_book">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
 
-        <div class="bouton">
-            <p>Explorer nos restaurants</p>
+            <div class="bouton">
+                <p>Explorer nos restaurants</p>
+            </div>
         </div>
-        <h3>Fonctionnement</h3>
-        <div>
-            <p>Choisissez un restaurant</p>
-        </div>
-        <div>
-            <p>Composez votre menu</p>
-        </div>
-        <div>
-            <p>Dégustez au restaurant</p>
-        </div>
-        <h3>Restaurants</h3>
-        <div>
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
-        </div>
-        <div>
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
-        </div>
-        <div>
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
-            <h3>À la française</h3>
-            <p>Cité Rouge</p>
-        </div>
-        <div>
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-        </div>
+
+        <section class="menu">
+            <div>
+                <h3>Fonctionnement</h3>
+            </div>
+            <ol>
+                <li>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez votre restaurant</p>
+                </li>
+                <li>
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </li>
+                <li>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="container_restaurants">
+            <div class="restaurants">
+                <h3>Restaurants</h3>
+
+                <div>
+                    <a class="carte" href="./la_palette_du_gout.html"></a>
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </div>
+                <div>
+                    <a class="carte" href="./la_note_enchantee.html"></a>
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                </div>
+                <div>
+                    <a class="carte" href="./À_la_française.html"></a>
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                </div>
+                <div>
+                    <a class="carte" href="./Le_délice_des_sens.html"></a>
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
     <footer>
