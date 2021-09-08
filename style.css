@@ -1,19 +1,20 @@
 body {
-    margin: 0;
-    padding: 0;
-}
-.header_logo{
-    display: flex;
+    font-family: 'Roboto';
+    margin: 0em;
   
+
 }
 
 .container_header {
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 20px;
 }
-
 
 .localisation {
     display: flex;
     align-items: center;
-    justify-content: flex-start;   
+    justify-content: space-around;  
 }
+
