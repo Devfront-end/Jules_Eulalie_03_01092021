@@ -1,9 +1,8 @@
 body {
     font-family: 'Roboto';
     margin: 0em;
-
-
 }
+
 
 .container_header {
     display: flex;
@@ -18,10 +17,10 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    padding: 0.5rem 0.5rem;
     background: #EAEAEA;
     font-size: 1.2rem;
     position: relative;
+    box-shadow:0px 2px 5px 0px inset #A6A6A6 ;
 }
 
 .ville {
@@ -61,18 +60,6 @@ body {
     box-shadow: 2px 2px 10px #c4c3c0;
     padding: 2px 20px;
     font-size: 15px;
-
-
-
-
-    /* display:flex;
-    justify-content: center;
-    color: whitesmoke;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    background: linear-gradient(#FF79DA, #9356DC); */
 }
 
 .menus {
@@ -112,9 +99,7 @@ body {
     background-color: #F5EDFF
 }
 
-.degustation {
-    background-color: #F5EDFF;
-}
+
 
 .menu_numero {
     display: flex;
@@ -128,3 +113,145 @@ body {
     left: -60px;
     color: white;
 }
+.menu_type:hover {
+background-color:#F5EDFF;
+}
+
+.container_restaurants {
+    padding: 55px 20px 45px 20px;
+    background-color: #f6f6f6;
+}
+
+.restaurant_titre {
+    margin-bottom: 30px;
+    margin-left: 3rem;
+}
+
+.container {
+ display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+}
+.container_cartes {
+    width: 49%;
+}
+
+
+.restaurants_cartes {
+    position: relative;
+    height: 250px;
+    margin-bottom: 20px;
+    border: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px 5px #DDDCE0;
+}
+.carte_restaurant_img {
+    display: block;
+    height: 175px;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    object-fit: cover;
+}
+.sticker {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: #99E2D0;
+    color:#008766;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.carte_restaurant {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-heart {
+    font-size: 20px;
+    color: grey; 
+}
+
+.heart:hover {
+background-color: #9356DC;
+}
+.nom_restaurant {
+    margin-top: -30px;
+    color: black;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container_footer {
+    color: white;
+    background-color:#353535;
+}
+
+.footer_logo {
+    font-family: serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: xx-large;
+    color: white;
+    margin-left: 4rem;
+   
+}
+a {
+    text-decoration: none;
+}
+
+footer ul{
+   list-style: none;
+   margin-left: 1.5em;
+}
+.footer_link {
+color: white;
+font-size: 15px;  
+}
+
+
+
+
+
+.carte_restaurant {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
