@@ -201,15 +201,6 @@ Position relative : l'élément reste dans le flow, ça permet aussi d'utiliser 
     justify-content: space-between;
 }
 
-.fa-heart {
-    font-size: 20px;
-    color: grey;
-
-}
-
-.fa-heart:hover {
-    background-color: #9356DC;
-}
 
 .nom_restaurant {
     margin-top: -30px;
@@ -265,4 +256,32 @@ a {
 
 .hands {
     padding-right: 7px;
+}
+
+.menu_card_like {
+width:25px ;
+height: 25px;
+position: relative;
+background-color:black;
+
+}
+
+.menu_card_like::before {
+    transition: 0.5s ;
+    opacity: 0;
+    content: "";
+    background: linear-gradient(#9356DC, #FF79DA);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.menu_card_like:hover::before {
+    opacity: 1;
+
+}
+
+.card_like {
+    background-color: white !important;
+    position: absolute;
+    mix-blend-mode: lighten;
 }
