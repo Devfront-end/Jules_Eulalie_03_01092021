@@ -5,12 +5,28 @@ body {
     box-sizing: border-box;
 }
 
+.loader_spinner {
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+    border-right: 10px solid #99E2D0;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    animation: spin 1.5s linear ;
+}
 
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .header_logo {
     font-family: Shrikhand;
     display: flex;
@@ -123,8 +139,9 @@ body {
     position: relative;
     left: -10px;
     color: white;
-   
+
 }
+
 h3 {
     font-family: sans-serif;
 }
@@ -265,23 +282,19 @@ a {
 }
 
 .menu_card_like {
-width:25px ;
-height: 25px;
-position: relative;
-background-color:black;
-
-border: 0 solid transparent;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-
-
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background-color: black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .menu_card_like::before {
-    transition: 0.5s ;
+    transition: 0.5s;
     opacity: 0;
     content: "";
     background: linear-gradient(#9356DC, #FF79DA);
@@ -289,6 +302,7 @@ cursor: pointer;
     width: 100%;
     height: 100%;
 }
+
 .menu_card_like:hover::before {
     opacity: 1;
 
@@ -298,8 +312,41 @@ cursor: pointer;
     background-color: white !important;
     position: absolute;
     mix-blend-mode: lighten;
-
-    display:flex;
+    padding: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
+.menu_card_like:hover .far {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/*
+@media screen and  (min-width:376px) and (max-width:1440px) {
+    .menus {
+        padding: 45px 20px 55px 20px;
+    
+    }
+
+    .liste_menu {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    .menu_type {
+        display: flex;
+        width: 100%;
+    }
+}*/
