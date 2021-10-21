@@ -270,16 +270,14 @@ body {
 }
 
 .menu_check {
+    display: flex;
     height: 60px;
     width: 50px;
-    opacity: 0;
     background-color: #99E2D0;
-    margin-left: 25px;
+    margin-left: 2.5em;
     margin-right: -7em;
     border-radius: 0 1em 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .nom_rue {
