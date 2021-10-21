@@ -424,7 +424,7 @@ a {
 }
 
 @media (min-width:1440px) {
-  
+
     .menu_type {
         padding-left: 1em;
         padding-right: 1em;
@@ -437,21 +437,28 @@ a {
         width: 100%;
     }
 
-    .container_cartes {
-        padding-left: 1em;
-    }
-
-    .container_resto {
+    .container_menu {
         max-width: 1400px;
         position: relative;
         margin: auto;
     }
+}
 
-    .footer_listing {
-        margin-left: 220px;
-    }
+.container_cartes {
+    padding-left: 1em;
+}
 
-    .footer_logo {
-        margin-left: 260px;
-    }
+.container_resto {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+}
+
+.footer_listing {
+    margin-left: 220px;
+}
+
+.footer_logo {
+    margin-left: 260px;
+}
 }
