@@ -7,19 +7,20 @@ body {
 
 .loader {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: 50;
     opacity: 0.8;
-    background-color: rgba(255,255, 255, 0.8);
-    animation:fadeout 3s;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: fadeout 3s;
     animation-fill-mode: both;
     animation-delay: 1.5s;
 
 }
+
 @keyframes fadeout {
     0% {
         opacity: 1;
@@ -27,10 +28,11 @@ body {
 
 
     }
+
     100% {
-        
+
         z-index: -50;
-        opacity:0;
+        opacity: 0;
     }
 }
 
@@ -43,13 +45,14 @@ body {
     height: 100px;
     width: 100px;
     position: relative;
-    animation: spinner 1.5s infinite ;
+    animation: spinner 1.5s infinite;
 }
 
 @keyframes spinner {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -156,6 +159,7 @@ body {
 .fa-mobile-alt:hover {
     color: #9356DC;
 }
+
 .fa-list-ul:hover {
     color: #9356DC;
 }
@@ -188,6 +192,8 @@ h3 {
     padding: 55px 20px 45px 20px;
     background-color: #f6f6f6;
 }
+
+
 
 .restaurant_titre {
     margin-bottom: 30px;
@@ -223,6 +229,10 @@ h3 {
     width: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
+}
+
+.fa-heart {
+    color: black;
 }
 
 .sticker {
@@ -312,8 +322,16 @@ a {
     padding-right: 12px;
 }
 
+.fa-utensils {
+    color: white;
+}
+
 .hands {
     padding-right: 7px;
+}
+
+.fa-hands-helping {
+    color: white;
 }
 
 .menu_card_like {
@@ -351,8 +369,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 24px;
 }
+
 .menu_card_like:hover .far {
     opacity: 0;
 }
@@ -368,7 +387,7 @@ a {
 @media (min-width:376px) {
     .menus {
         padding: 45px 20px 55px 20px;
-    
+
     }
 
     .liste_menu {
@@ -377,8 +396,8 @@ a {
         flex-direction: row;
         margin: 0;
         padding: 0;
-      
-       
+
+
     }
 
     .menu_type {
@@ -394,17 +413,23 @@ a {
         flex-direction: column;
         margin: 0;
         padding: 0;
-        width:95%;
-       
+        width: 95%;
+
     }
 
     .menu_type {
         display: flex;
-     
+
     }
 }
 
 @media (min-width:1440px) {
+  
+    .menu_type {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     .container {
         display: flex;
         justify-content: space-around;
@@ -414,5 +439,19 @@ a {
 
     .container_cartes {
         padding-left: 1em;
+    }
+
+    .container_resto {
+        max-width: 1400px;
+        position: relative;
+        margin: auto;
+    }
+
+    .footer_listing {
+        margin-left: 220px;
+    }
+
+    .footer_logo {
+        margin-left: 260px;
     }
 }
