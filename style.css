@@ -147,7 +147,7 @@ body {
     display: flex;
 }
 
-.menu_type:hover{
+.menu_type:hover {
     color: #9356DC;
 }
 
@@ -284,10 +284,12 @@ Position relative : l'élément reste dans le flow, ça permet aussi d'utiliser 
 }
 
 .container_footer {
-    color: white;
+    color: #F6F6F6;
+    ;
     background-color: #353535;
-    height: 200px;
+
     padding-top: 1em;
+
 
 }
 
@@ -391,7 +393,7 @@ a {
 
 
 
-@media (min-width:376px) {
+@media (min-width:375px) {
     .menus {
         padding: 45px 20px 55px 20px;
 
@@ -403,13 +405,19 @@ a {
         flex-direction: row;
         margin: 0;
         padding: 0;
-
-
     }
 
     .menu_type {
         display: flex;
         width: 100%;
+    }
+
+    .footer_listing {
+        padding-left: 20px;
+    }
+
+    .footer_logo {
+        margin-left: 2em;
     }
 }
 
@@ -427,6 +435,14 @@ a {
     .menu_type {
         display: flex;
 
+    }
+
+    .footer_listing {
+        padding-left: 2em;
+    }
+
+    .footer_logo {
+        padding-left: -2em;
     }
 }
 
@@ -454,20 +470,18 @@ a {
     .container_cartes {
         padding-left: 1em;
     }
-    
+
     .container_resto {
         max-width: 1400px;
         position: relative;
         margin: auto;
     }
-    
+
     .footer_listing {
-        margin-left: 220px;
+        padding-left: 260px;
     }
-    
+
     .footer_logo {
-        margin-left: 260px;
+        padding-left: 220px;
     }
 }
-
-
