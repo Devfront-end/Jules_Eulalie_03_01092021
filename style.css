@@ -145,12 +145,17 @@ body {
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #f6f6f6;
     display: flex;
+}
 
+.menu_type:hover{
+    color: #9356DC;
 }
 
 .menu_icon {
     margin-right: 15px;
 }
+
+
 
 .fa-store:hover {
     color: #9356DC;
@@ -175,10 +180,12 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: -10px;
+    left: -24px;
     color: white;
 
 }
+
+
 
 h3 {
     font-family: sans-serif;
@@ -442,23 +449,25 @@ a {
         position: relative;
         margin: auto;
     }
+
+
+    .container_cartes {
+        padding-left: 1em;
+    }
+    
+    .container_resto {
+        max-width: 1400px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .footer_listing {
+        margin-left: 220px;
+    }
+    
+    .footer_logo {
+        margin-left: 260px;
+    }
 }
 
-.container_cartes {
-    padding-left: 1em;
-}
 
-.container_resto {
-    max-width: 1400px;
-    position: relative;
-    margin: auto;
-}
-
-.footer_listing {
-    margin-left: 220px;
-}
-
-.footer_logo {
-    margin-left: 260px;
-}
-}

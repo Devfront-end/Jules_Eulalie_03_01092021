@@ -6,13 +6,23 @@ body {
 
 .header_logo {
     font-family: Shrikhand;
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    padding: 5px;
-    font-style: italic;
-    font-weight: 900;
+    text-align: center;
     margin: 0;
+}
+
+.header_arrow {
+ position:absolute;
+left: 2rem;
+
+  width: 2rem;
+  top: 50%;
+  display: flex;
+align-items: center;
+justify-content: center;
+transform:translateY(-50%);
+font-size: 1.2rem;
+color: #000;
+ 
 }
 
 .header {
@@ -21,12 +31,11 @@ body {
 }
 
 .container_header {
-    display: flex;
+
     justify-content: space-around;
 }
 
 .fa-long-arrow-alt-left {
-    position: relative;
     left: 2rem;
     width: 2rem;
     top: 50%;
@@ -68,12 +77,15 @@ body {
     justify-content: space-between;
     font-family: Shrikhand;
     font-size: 18px;
+
 }
 
 .menu_type {
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 1rem;
+    overflow: hidden;
+    position: relative;
+    /*padding: 10px;
+    align-items: flex-end;
+    margin-left: 2rem;*/
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
     border-radius: 1rem 1rem 1rem 1rem;
@@ -85,6 +97,7 @@ body {
 
 .menu_type1 {
     animation-delay: 0.1s;
+
 }
 
 .container_resto {
@@ -262,22 +275,50 @@ body {
 }
 
 .menu_header {
-    
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 1em;
 }
 
 .menu_description {
     margin-top: -15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menu_check {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    height: 60px;
-    width: 50px;
+    /*paddingheight: 60px;
+    width: 60px;*/
     background-color: #99E2D0;
     margin-left: 2.5em;
-    margin-right: -7em;
+    margin-right: -6em;
     border-radius: 0 1em 1em 0;
-   
+    transition: all 0.5s ease;
+}
+
+.menu_type:hover>.menu_check {
+    margin-right: 0px;
+}
+
+.menu_icon {
+    color: white;
+    padding: 1.5em;
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+
+
+.price {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .nom_rue {
@@ -346,6 +387,9 @@ a {
 }
 
 @media (min-width:376px) {
+    .container_header {
+        position: relative;
+    }
     /*.menus {
         padding: 45px 20px 55px 20px;
 
@@ -385,6 +429,18 @@ a {
 }
 
 @media (min-width:1440px) {
+
+    .fa-long-arrow-alt-left {
+       
+        left: 2rem;
+        width: 2rem;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: #000;
+    }
 
     .sous_menus {
         display: flex;
