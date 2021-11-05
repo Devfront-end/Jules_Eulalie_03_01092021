@@ -1,5 +1,4 @@
 body {
-    font-family: 'Shrikhand''Roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -78,7 +77,6 @@ body {
 
 .ville {
     margin: 20px;
-    margin: 20 px;
     font-family: 'Roboto';
     font-size: 0.8em;
 }
@@ -96,8 +94,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: Roboto;
-    font-size: 700;
+    font-family: Roboto; 
 }
 
 .sous_titre_book {
@@ -106,14 +103,10 @@ body {
     text-align: center;
     font-weight: 300;
     font-family: 'Roboto';
-    font-size:100;
-
 }
 
 .explore {
     font-family: Roboto;
-    font-size: 500;
-  
 }
 
 .bouton {
@@ -121,27 +114,31 @@ body {
     width: max-content;
     margin: auto;
     background: linear-gradient(#FF79DA, #9356DC);
-
     color: white;
     border-radius: 40px;
-    box-shadow: 2px 2px 10px #c4c3c0;
+    box-shadow: 2px 2px 10px #C4C3C0;
     padding: 2px 20px;
     font-size: 15px;
     cursor: pointer;
-    animation: bounce 1s ;
-    
+    height: 45px;
 }
 
+.bouton {
+    background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+}
 
+.bouton:hover {
+    animation: bounce_bouton 1s infinite alternate;
+}
 
-@keyframes bounce {
-    from{
-        box-shadow:0 0 5px #c4c3c0;
-        }
-        
-    to{    
-        box-shadow:0 0 15px hsl(300, 41%, 33%)  
-        }
+@keyframes bounce_bouton {
+    from {
+        box-shadow: 0 0 5px #C4C3C0;
+    }
+
+    to {
+        box-shadow: 0 0 15px hsl(300, 41%, 33%)
+    }
 }
 
 
@@ -155,6 +152,7 @@ body {
 .titre_menu {
     margin-bottom: 30px;
     font-family: 'Roboto';
+    padding-left: 1em;
 }
 
 .liste_menu {
@@ -362,8 +360,8 @@ a {
     display: flex;
     flex-direction: column;
     line-height: 1.8em;
-    font-family: 'Roboto'`;
- 
+    font-family: 'Roboto';
+
 
 }
 
@@ -444,6 +442,19 @@ a {
         width: 100%;
     }
 
+    .menu_numero {
+        display: flex;
+        height: 2em;
+        width: 2em;
+        border-radius: 100%;
+        background-color: #9356DC;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -10px;
+        color: white;
+    }
+
     .footer_listing {
         padding-left: 20px;
     }
@@ -474,7 +485,7 @@ a {
     }
 
     .footer_logo {
-        padding-left: -2em;
+        margin-left: 1.5em;
     }
 }
 
