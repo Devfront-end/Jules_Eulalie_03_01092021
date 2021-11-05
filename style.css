@@ -72,13 +72,13 @@ body {
     background: #EAEAEA;
     font-size: 1.2rem;
     position: relative;
-    box-shadow: 0px 2px 5px 0px inset #A6A6A6;
+    box-shadow: 0px 2.5px inset #ccc;
 }
 
 .ville {
     margin: 20px;
     font-family: 'Roboto';
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 
@@ -103,15 +103,19 @@ body {
     text-align: center;
     font-weight: 300;
     font-family: 'Roboto';
+    font-size: larger;
 }
 
 .explore {
     font-family: Roboto;
+    font-weight: 400;
+    font-size: initial;
 }
+
 
 .bouton {
     display: flex;
-    width: max-content;
+    width: 200px;
     margin: auto;
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
@@ -120,12 +124,11 @@ body {
     padding: 2px 20px;
     font-size: 15px;
     cursor: pointer;
-    height: 45px;
+    justify-content: center;
+    align-items: center;
 }
 
-.bouton {
-    background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-}
+
 
 .bouton:hover {
     animation: bounce_bouton 1s infinite alternate;
@@ -198,19 +201,7 @@ body {
 
 
 
-.menu_numero {
-    display: flex;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
-    background-color: #9356DC;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -24px;
-    color: white;
 
-}
 
 
 
@@ -507,6 +498,20 @@ a {
         max-width: 1400px;
         position: relative;
         margin: auto;
+    }
+
+    .menu_numero {
+        display: flex;
+        height: 2em;
+        width: 2em;
+        border-radius: 100%;
+        background-color: #9356DC;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -24px;
+        color: white;
+    
     }
 
 
